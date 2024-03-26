@@ -1,0 +1,23 @@
+.stopwatch {
+  width: 100%;
+  background-color: darkblue;
+  color: tan;
+}
+
+.stopwatch h1 {
+  padding: 3rem 0;
+}
+
+.time {
+  font-size: 3rem;
+  padding-bottom: 2.5rem;
+}
+
+button {
+  margin: 2rem 1rem;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: tan;
+}

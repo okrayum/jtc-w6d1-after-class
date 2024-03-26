@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { startTimer, pauseTimer, resetTimer } from "../store/actions/stopwatchActions";
+import {
+  startTimer,
+  pauseTimer,
+  resetTimer,
+} from "../store/actions/stopwatchActions";
 import styles from "./StopwatchStyles.module.css";
 
 const Stopwatch = ({ timerRunning, startTimer, pauseTimer, resetTimer }) => {
@@ -44,9 +48,13 @@ const Stopwatch = ({ timerRunning, startTimer, pauseTimer, resetTimer }) => {
   return (
     <div className={styles.stopwatch}>
       <h1>React/Redux Stopwatch</h1>
-      <div className={styles.time}>Time: {formatTime(time)}</div>
-      <button onClick={handleStart} disabled={timerRunning}>Start</button>
-      <button onClick={handlePause} disabled={!timerRunning}>Pause</button>
+      <div data-testid="time-display" className={styles.time}>Time: {formatTime(time)}</div>
+      <button onClick={handleStart} disabled={timerRunning}>
+        Start
+      </button>
+      <button onClick={handlePause} disabled={!timerRunning}>
+        Pause
+      </button>
       <button onClick={handleReset}>Reset</button>
     </div>
   );
@@ -54,11 +62,10 @@ const Stopwatch = ({ timerRunning, startTimer, pauseTimer, resetTimer }) => {
 
 const mapStateToProps = (state) => {
   return {
-    timerRunning: state.timerRunning
+    timerRunning: state.timerRunning,
   };
 };
 
-export default connect(mapStateToProps, { startTimer, pauseTimer, resetTimer })(Stopwatch);
-
-
-
+export default connect(mapStateToProps, { startTimer, pauseTimer, resetTimer })(
+  Stopwatch
+);

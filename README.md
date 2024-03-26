@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# W5D4 After-Class Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a simple web application created with React and using Redux to manage state.
 
-In the project directory, you can run:
 
-### `npm start`
+## Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository.
+2. Navigate to the project directory `jtc-w5d4-after-class`.
+3. Install dependencies using `npm install`.
+4. Start the project with `npm start`.
+5. The project should automatically open in your browser. If it doesn't you can navigate to `http://localhost:3000`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project is structured as follows:
+- `src/`: Contains all source code files.
+  - `components/`: Includes the stopwatch component and it's accompanying CSS file used in the application.
+  - `store/`: Contains the actions, reducers, store, and types file needed by Redux to manage state.
+  - `App.js`: Main component rendering the application.
+  - `index.js`: Entry point of the application.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Key Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Stopwatch Component
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Stopwatch component allows users to keep track of time using a timer that displays seconds and minutes. It has 3 button controls: Start, Pause, and Reset. It manages state eith Redux.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project utilizes the following external libraries:
+- react-redux: Integrates Redux with React components, enabling efficient state management.
+- redux: Provides a predictable state container for JavaScript applications, facilitating the management of complex application states.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
