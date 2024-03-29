@@ -47,7 +47,7 @@ const Stopwatch = ({ timerRunning, startTimer, pauseTimer, resetTimer }) => {
 
   return (
     <div className={styles.stopwatch}>
-      <h1>React/Redux Stopwatch</h1>
+      <h1>React / Redux Stopwatch</h1>
       <div data-testid="time-display" className={styles.time}>Time: {formatTime(time)}</div>
       <button onClick={handleStart} disabled={timerRunning}>
         Start
